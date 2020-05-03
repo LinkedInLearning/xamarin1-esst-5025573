@@ -5,6 +5,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:local="clr-namespace:ElVegetarianoFurio;assembly=ElVegetarianoFurio"
              xmlns:profile="clr-namespace:ElVegetarianoFurio.Profile;assembly=ElVegetarianoFurio"
+             xmlns:menu="clr-namespace:ElVegetarianoFurio.Menu;assembly=ElVegetarianoFurio"
              mc:Ignorable="d"
              x:Class="ElVegetarianoFurio.AppShell">
 
@@ -23,12 +24,12 @@
     <ShellContent Title="Start" ContentTemplate="{DataTemplate local:MainPage}"></ShellContent>
 
     <FlyoutItem Title="Speisekarte">
-        <ShellContent Title="Ensaladas" ContentTemplate="{DataTemplate local:MainPage}"></ShellContent>
-        <ShellContent Title="Sopas" ContentTemplate="{DataTemplate local:MainPage}"></ShellContent>
-        <ShellContent Title="Tapas" ContentTemplate="{DataTemplate local:MainPage}"></ShellContent>
-        <ShellContent Title="Principales" ContentTemplate="{DataTemplate local:MainPage}"></ShellContent>
-        <ShellContent Title="Postres" ContentTemplate="{DataTemplate local:MainPage}"></ShellContent>
-        <ShellContent Title="Bebidas" ContentTemplate="{DataTemplate local:MainPage}"></ShellContent>
+        <ShellContent Title="Ensaladas" ContentTemplate="{DataTemplate menu:EnsaladasPage}"></ShellContent>
+        <ShellContent Title="Sopas" ContentTemplate="{DataTemplate menu:SopasPage}"></ShellContent>
+        <ShellContent Title="Tapas" ContentTemplate="{DataTemplate menu:TapasPage}"></ShellContent>
+        <ShellContent Title="Principales" ContentTemplate="{DataTemplate menu:PrincipalesPage}"></ShellContent>
+        <ShellContent Title="Postres" ContentTemplate="{DataTemplate menu:PostresPage}"></ShellContent>
+        <ShellContent Title="Bebidas" ContentTemplate="{DataTemplate menu:BebidasPage}"></ShellContent>
     </FlyoutItem>
 
     <ShellContent Title="Kontakt" ContentTemplate="{DataTemplate local:MainPage}"></ShellContent>

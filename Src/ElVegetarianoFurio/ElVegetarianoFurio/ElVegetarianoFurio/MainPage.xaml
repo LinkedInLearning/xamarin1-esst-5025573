@@ -12,7 +12,7 @@
         <CollectionView ItemsSource="{Binding Categories}">
             <CollectionView.ItemTemplate>
                 <DataTemplate>
-                    <Grid Padding="5 0 5 0">
+                    <Grid Padding="5">
                         <Image Source="{Binding Image}" HeightRequest="200" Aspect="AspectFill"></Image>
                     <StackLayout Padding="5" VerticalOptions="End" BackgroundColor="Black" Opacity="0.7">
                         <Label Text="{Binding Name}" FontAttributes="Bold" TextColor="White"></Label>

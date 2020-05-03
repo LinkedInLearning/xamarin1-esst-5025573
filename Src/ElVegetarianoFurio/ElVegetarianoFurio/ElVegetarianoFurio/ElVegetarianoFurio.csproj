@@ -81,7 +81,28 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Menu\BebidasPage.xaml.cs">
+      <DependentUpon>BebidasPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Menu\PostresPage.xaml.cs">
+      <DependentUpon>PostresPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Menu\PrincipalesPage.xaml.cs">
+      <DependentUpon>PrincipalesPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Menu\TapasPage.xaml.cs">
+      <DependentUpon>TapasPage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
     <EmbeddedResource Update="AppShell.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Menu\EnsaladasPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Menu\SopasPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Profile\ProfilePage.xaml">

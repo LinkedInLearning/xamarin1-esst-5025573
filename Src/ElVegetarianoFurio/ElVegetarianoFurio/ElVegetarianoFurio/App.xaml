@@ -6,6 +6,22 @@
              mc:Ignorable="d"
              x:Class="ElVegetarianoFurio.App">
     <Application.Resources>
-
+        <DataTemplate x:Key="DishRowTemplate">
+            <Grid Padding="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="60"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Image Grid.RowSpan="2" Source="{Binding Image}" Aspect="AspectFill" HeightRequest="60" WidthRequest="60" ></Image>
+                <Label Grid.Column="1" Text="{Binding Name}" FontAttributes="Bold"></Label>
+                <Label Grid.Column="2" Text="{Binding Price, StringFormat='{0:C}'}"></Label>
+                <Label Grid.Row="1" Grid.Column="1" Text="{Binding Description}" FontAttributes="Italic"></Label>
+            </Grid>
+        </DataTemplate>
     </Application.Resources>
 </Application>
