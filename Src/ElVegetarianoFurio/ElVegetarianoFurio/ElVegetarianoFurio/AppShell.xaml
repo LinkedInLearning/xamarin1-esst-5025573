@@ -6,6 +6,7 @@
              xmlns:local="clr-namespace:ElVegetarianoFurio;assembly=ElVegetarianoFurio"
              xmlns:profile="clr-namespace:ElVegetarianoFurio.Profile;assembly=ElVegetarianoFurio"
              xmlns:menu="clr-namespace:ElVegetarianoFurio.Menu;assembly=ElVegetarianoFurio"
+             xmlns:contact="clr-namespace:ElVegetarianoFurio.Contact;assembly=ElVegetarianoFurio"
              mc:Ignorable="d"
              x:Class="ElVegetarianoFurio.AppShell">
 
@@ -32,7 +33,7 @@
         <ShellContent Title="Bebidas" Route="bebidas" ContentTemplate="{DataTemplate menu:BebidasPage}"></ShellContent>
     </FlyoutItem>
 
-    <ShellContent Title="Kontakt" ContentTemplate="{DataTemplate local:MainPage}"></ShellContent>
+    <ShellContent Title="Kontakt" ContentTemplate="{DataTemplate contact:ContactPage}"></ShellContent>
     <ShellContent Title="Profil" ContentTemplate="{DataTemplate profile:ProfilePage}"></ShellContent>
 
     <MenuItem Text="Jetzt anrufen" Command="{Binding CallNowCommand}"></MenuItem>
