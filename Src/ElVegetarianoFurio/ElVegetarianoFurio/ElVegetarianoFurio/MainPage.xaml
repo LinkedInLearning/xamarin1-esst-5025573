@@ -7,10 +7,19 @@
              x:Class="ElVegetarianoFurio.MainPage">
 
     <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+        <Label FontSize="Title" FontAttributes="Bold" Padding="5">Unsere Speisen</Label>
+    
+        <CollectionView ItemsSource="{Binding Categories}">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout Padding="5">
+                        <Label Text="{Binding Name}" FontAttributes="Bold"></Label>
+                        <Label Text="{Binding Description}" FontAttributes="Italic"></Label>
+                    </StackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
     </StackLayout>
 
 </ContentPage>
