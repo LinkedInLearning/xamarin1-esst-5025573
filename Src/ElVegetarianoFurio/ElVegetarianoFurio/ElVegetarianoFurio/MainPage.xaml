@@ -3,11 +3,14 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:fonts="clr-namespace:ElVegetarianoFurio.Fonts;assembly=ElVegetarianoFurio"
              mc:Ignorable="d"
              x:Class="ElVegetarianoFurio.MainPage">
 
     <StackLayout>
-        <Label FontSize="Title" FontAttributes="Bold" Padding="5">Unsere Speisen</Label>
+        <Label Text="{x:Static fonts:FaSolid.Utensils}" FontFamily="fa-solid" FontSize="99" HorizontalTextAlignment="Center" Padding="10"></Label>
+        <Label Text="El Vegetariano Furio" FontSize="Title" HorizontalTextAlignment="Center"></Label>
+        <Label FontSize="Medium" FontAttributes="Bold" Padding="5">Unsere Speisen</Label>
     
         <CollectionView ItemsSource="{Binding Categories}" SelectionMode="Single" SelectionChanged="OnCategorySelected" >
             <CollectionView.ItemTemplate>
