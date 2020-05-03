@@ -4,6 +4,7 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:local="clr-namespace:ElVegetarianoFurio;assembly=ElVegetarianoFurio"
+             xmlns:profile="clr-namespace:ElVegetarianoFurio.Profile;assembly=ElVegetarianoFurio"
              mc:Ignorable="d"
              x:Class="ElVegetarianoFurio.AppShell">
 
@@ -31,7 +32,7 @@
     </FlyoutItem>
 
     <ShellContent Title="Kontakt" ContentTemplate="{DataTemplate local:MainPage}"></ShellContent>
-    <ShellContent Title="Profil" ContentTemplate="{DataTemplate local:MainPage}"></ShellContent>
+    <ShellContent Title="Profil" ContentTemplate="{DataTemplate profile:ProfilePage}"></ShellContent>
 
     <MenuItem Text="Jetzt anrufen" Command="{Binding CallNowCommand}"></MenuItem>
 
