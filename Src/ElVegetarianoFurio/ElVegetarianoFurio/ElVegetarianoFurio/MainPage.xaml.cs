@@ -13,9 +13,17 @@ namespace ElVegetarianoFurio
     [DesignTimeVisible(false)]
     public partial class MainPage : ContentPage
     {
+        private MainPageViewModel _viewModel;
         public MainPage()
         {
             InitializeComponent();
+            BindingContext = _viewModel = new MainPageViewModel();
+        }
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            _viewModel.LoadDataCommand.Execute(null);
         }
     }
 }
