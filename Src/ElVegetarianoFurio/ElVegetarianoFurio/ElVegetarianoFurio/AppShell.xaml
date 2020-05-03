@@ -6,6 +6,19 @@
              xmlns:local="clr-namespace:ElVegetarianoFurio;assembly=ElVegetarianoFurio"
              mc:Ignorable="d"
              x:Class="ElVegetarianoFurio.AppShell">
+
+    <Shell.FlyoutHeader>
+        <StackLayout Padding="30" BackgroundColor="DarkRed">
+            <Label FontSize="Large"
+                   TextColor="White"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   VerticalOptions="CenterAndExpand">
+                El Vegetariano Furio
+            </Label>
+        </StackLayout>
+    </Shell.FlyoutHeader>
+
     <ShellContent Title="Start" ContentTemplate="{DataTemplate local:MainPage}"></ShellContent>
 
     <FlyoutItem Title="Speisekarte">
@@ -19,5 +32,7 @@
 
     <ShellContent Title="Kontakt" ContentTemplate="{DataTemplate local:MainPage}"></ShellContent>
     <ShellContent Title="Profil" ContentTemplate="{DataTemplate local:MainPage}"></ShellContent>
+
+    <MenuItem Text="Jetzt anrufen" Command="{Binding CallNowCommand}"></MenuItem>
 
 </Shell>
