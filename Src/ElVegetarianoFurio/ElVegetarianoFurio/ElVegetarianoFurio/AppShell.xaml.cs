@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using ElVegetarianoFurio.Menu;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -19,7 +20,13 @@ namespace ElVegetarianoFurio
         public AppShell()
         {
             InitializeComponent();
+            RegisterRoutes();
             BindingContext = this;
+        }
+
+        private void RegisterRoutes()
+        {
+            Routing.RegisterRoute("menu/dish", typeof(DetailsPage));
         }
 
         private void CallNow()
