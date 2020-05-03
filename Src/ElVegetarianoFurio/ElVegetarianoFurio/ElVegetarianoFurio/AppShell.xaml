@@ -7,6 +7,7 @@
              xmlns:profile="clr-namespace:ElVegetarianoFurio.Profile;assembly=ElVegetarianoFurio"
              xmlns:menu="clr-namespace:ElVegetarianoFurio.Menu;assembly=ElVegetarianoFurio"
              xmlns:contact="clr-namespace:ElVegetarianoFurio.Contact;assembly=ElVegetarianoFurio"
+             xmlns:fonts="clr-namespace:ElVegetarianoFurio.Fonts;assembly=ElVegetarianoFurio"
              mc:Ignorable="d"
              x:Class="ElVegetarianoFurio.AppShell">
 
@@ -22,20 +23,63 @@
         </StackLayout>
     </Shell.FlyoutHeader>
 
-    <ShellContent Title="Start" Route="start" ContentTemplate="{DataTemplate local:MainPage}"></ShellContent>
+    <ShellContent Title="Start" Route="start" ContentTemplate="{DataTemplate local:MainPage}">
+        <ShellContent.Icon>
+            <FontImageSource FontFamily="fa-solid" Glyph="{x:Static fonts:FaSolid.Home}" Color="Black"></FontImageSource>
+        </ShellContent.Icon>
+    </ShellContent>
 
     <FlyoutItem Title="Speisekarte" Route="menu">
-        <ShellContent Title="Ensaladas" Route="ensaladas" ContentTemplate="{DataTemplate menu:EnsaladasPage}"></ShellContent>
-        <ShellContent Title="Sopas" Route="sopas" ContentTemplate="{DataTemplate menu:SopasPage}"></ShellContent>
-        <ShellContent Title="Tapas" Route="tapas" ContentTemplate="{DataTemplate menu:TapasPage}"></ShellContent>
-        <ShellContent Title="Principales" Route="principales" ContentTemplate="{DataTemplate menu:PrincipalesPage}"></ShellContent>
-        <ShellContent Title="Postres" Route="postres" ContentTemplate="{DataTemplate menu:PostresPage}"></ShellContent>
-        <ShellContent Title="Bebidas" Route="bebidas" ContentTemplate="{DataTemplate menu:BebidasPage}"></ShellContent>
+        <FlyoutItem.Icon>
+            <FontImageSource FontFamily="fa-solid" Glyph="{x:Static fonts:FaSolid.Utensils}" Color="Black"></FontImageSource>
+        </FlyoutItem.Icon>
+        <ShellContent Title="Ensaladas" Route="ensaladas" ContentTemplate="{DataTemplate menu:EnsaladasPage}">
+            <ShellContent.Icon>
+                <FontImageSource FontFamily="fa-solid" Glyph="{x:Static fonts:FaSolid.Carrot}"></FontImageSource>
+            </ShellContent.Icon>
+        </ShellContent>
+        <ShellContent Title="Sopas" Route="sopas" ContentTemplate="{DataTemplate menu:SopasPage}">
+            <ShellContent.Icon>
+                <FontImageSource FontFamily="fa-solid" Glyph="{x:Static fonts:FaSolid.UtensilSpoon}"></FontImageSource>
+            </ShellContent.Icon>
+        </ShellContent>
+        <ShellContent Title="Tapas" Route="tapas" ContentTemplate="{DataTemplate menu:TapasPage}">
+            <ShellContent.Icon>
+                <FontImageSource FontFamily="fa-solid" Glyph="{x:Static fonts:FaSolid.PepperHot}"></FontImageSource>
+            </ShellContent.Icon>
+        </ShellContent>
+        <ShellContent Title="Principales" Route="principales" ContentTemplate="{DataTemplate menu:PrincipalesPage}">
+            <ShellContent.Icon>
+                <FontImageSource FontFamily="fa-solid" Glyph="{x:Static fonts:FaSolid.Utensils}"></FontImageSource>
+            </ShellContent.Icon>
+        </ShellContent>
+        <ShellContent Title="Postres" Route="postres" ContentTemplate="{DataTemplate menu:PostresPage}">
+            <ShellContent.Icon>
+                <FontImageSource FontFamily="fa-solid" Glyph="{x:Static fonts:FaSolid.IceCream}"></FontImageSource>
+            </ShellContent.Icon>
+        </ShellContent>
+        <ShellContent Title="Bebidas" Route="bebidas" ContentTemplate="{DataTemplate menu:BebidasPage}">
+            <ShellContent.Icon>
+                <FontImageSource FontFamily="fa-solid" Glyph="{x:Static fonts:FaSolid.GlassCheers}"></FontImageSource>
+            </ShellContent.Icon>
+        </ShellContent>
     </FlyoutItem>
 
-    <ShellContent Title="Kontakt" ContentTemplate="{DataTemplate contact:ContactPage}"></ShellContent>
-    <ShellContent Title="Profil" ContentTemplate="{DataTemplate profile:ProfilePage}"></ShellContent>
+    <ShellContent Title="Kontakt" ContentTemplate="{DataTemplate contact:ContactPage}">
+        <ShellContent.Icon>
+            <FontImageSource FontFamily="fa-solid" Glyph="{x:Static fonts:FaSolid.MapMarkedAlt}" Color="Black"></FontImageSource>
+        </ShellContent.Icon>
+    </ShellContent>
+    <ShellContent Title="Profil" ContentTemplate="{DataTemplate profile:ProfilePage}">
+        <ShellContent.Icon>
+            <FontImageSource FontFamily="fa-solid" Glyph="{x:Static fonts:FaSolid.UserCircle}" Color="Black"></FontImageSource>
+        </ShellContent.Icon>
+    </ShellContent>
 
-    <MenuItem Text="Jetzt anrufen" Command="{Binding CallNowCommand}"></MenuItem>
+    <MenuItem Text="Jetzt anrufen" Command="{Binding CallNowCommand}">
+        <MenuItem.IconImageSource>
+            <FontImageSource FontFamily="fa-solid" Glyph="{x:Static fonts:FaSolid.Phone}" Color="Black"></FontImageSource>
+        </MenuItem.IconImageSource>
+    </MenuItem>
 
 </Shell>
