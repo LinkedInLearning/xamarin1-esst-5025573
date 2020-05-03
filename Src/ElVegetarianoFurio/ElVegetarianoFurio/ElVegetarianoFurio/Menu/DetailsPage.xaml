@@ -4,12 +4,27 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="ElVegetarianoFurio.Menu.DetailsPage">
+             x:Class="ElVegetarianoFurio.Menu.DetailsPage"
+             Title="{Binding Dish.Name}">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Image Source="{Binding Dish.Image}"
+                   Aspect="AspectFill"
+                   HeightRequest="400"></Image>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Label Text="{Binding Name}" FontAttributes="Bold"></Label>
+                <Label Grid.Column="1" Text="{Binding Price, StringFormat='{0:C}'}"></Label>
+                <Label Grid.Row="1" Text="{Binding Description}" FontAttributes="Italic"></Label>
+
+            </Grid>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
