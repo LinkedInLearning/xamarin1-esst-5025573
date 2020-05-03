@@ -12,10 +12,66 @@
 
   <ItemGroup>
     <None Remove="Data\db.json" />
+    <None Remove="Images\Categories\1.jpg" />
+    <None Remove="Images\Categories\2.jpg" />
+    <None Remove="Images\Categories\3.jpg" />
+    <None Remove="Images\Categories\4.jpg" />
+    <None Remove="Images\Categories\5.jpg" />
+    <None Remove="Images\Categories\6.jpg" />
+    <None Remove="Images\Dishes\1.jpg" />
+    <None Remove="Images\Dishes\10.jpg" />
+    <None Remove="Images\Dishes\11.jpg" />
+    <None Remove="Images\Dishes\12.jpg" />
+    <None Remove="Images\Dishes\13.jpg" />
+    <None Remove="Images\Dishes\14.jpg" />
+    <None Remove="Images\Dishes\15.jpg" />
+    <None Remove="Images\Dishes\16.jpg" />
+    <None Remove="Images\Dishes\17.jpg" />
+    <None Remove="Images\Dishes\18.jpg" />
+    <None Remove="Images\Dishes\19.jpg" />
+    <None Remove="Images\Dishes\2.jpg" />
+    <None Remove="Images\Dishes\20.jpg" />
+    <None Remove="Images\Dishes\21.jpg" />
+    <None Remove="Images\Dishes\22.jpg" />
+    <None Remove="Images\Dishes\3.jpg" />
+    <None Remove="Images\Dishes\4.jpg" />
+    <None Remove="Images\Dishes\5.jpg" />
+    <None Remove="Images\Dishes\6.jpg" />
+    <None Remove="Images\Dishes\7.jpg" />
+    <None Remove="Images\Dishes\8.jpg" />
+    <None Remove="Images\Dishes\9.jpg" />
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Include="Data\db.json" />
+    <EmbeddedResource Include="Images\Categories\1.jpg" />
+    <EmbeddedResource Include="Images\Categories\2.jpg" />
+    <EmbeddedResource Include="Images\Categories\3.jpg" />
+    <EmbeddedResource Include="Images\Categories\4.jpg" />
+    <EmbeddedResource Include="Images\Categories\5.jpg" />
+    <EmbeddedResource Include="Images\Categories\6.jpg" />
+    <EmbeddedResource Include="Images\Dishes\1.jpg" />
+    <EmbeddedResource Include="Images\Dishes\10.jpg" />
+    <EmbeddedResource Include="Images\Dishes\11.jpg" />
+    <EmbeddedResource Include="Images\Dishes\12.jpg" />
+    <EmbeddedResource Include="Images\Dishes\13.jpg" />
+    <EmbeddedResource Include="Images\Dishes\14.jpg" />
+    <EmbeddedResource Include="Images\Dishes\15.jpg" />
+    <EmbeddedResource Include="Images\Dishes\16.jpg" />
+    <EmbeddedResource Include="Images\Dishes\17.jpg" />
+    <EmbeddedResource Include="Images\Dishes\18.jpg" />
+    <EmbeddedResource Include="Images\Dishes\19.jpg" />
+    <EmbeddedResource Include="Images\Dishes\2.jpg" />
+    <EmbeddedResource Include="Images\Dishes\20.jpg" />
+    <EmbeddedResource Include="Images\Dishes\21.jpg" />
+    <EmbeddedResource Include="Images\Dishes\22.jpg" />
+    <EmbeddedResource Include="Images\Dishes\3.jpg" />
+    <EmbeddedResource Include="Images\Dishes\4.jpg" />
+    <EmbeddedResource Include="Images\Dishes\5.jpg" />
+    <EmbeddedResource Include="Images\Dishes\6.jpg" />
+    <EmbeddedResource Include="Images\Dishes\7.jpg" />
+    <EmbeddedResource Include="Images\Dishes\8.jpg" />
+    <EmbeddedResource Include="Images\Dishes\9.jpg" />
   </ItemGroup>
 
   <ItemGroup>
