@@ -21,15 +21,15 @@
         </StackLayout>
     </Shell.FlyoutHeader>
 
-    <ShellContent Title="Start" ContentTemplate="{DataTemplate local:MainPage}"></ShellContent>
+    <ShellContent Title="Start" Route="start" ContentTemplate="{DataTemplate local:MainPage}"></ShellContent>
 
-    <FlyoutItem Title="Speisekarte">
-        <ShellContent Title="Ensaladas" ContentTemplate="{DataTemplate menu:EnsaladasPage}"></ShellContent>
-        <ShellContent Title="Sopas" ContentTemplate="{DataTemplate menu:SopasPage}"></ShellContent>
-        <ShellContent Title="Tapas" ContentTemplate="{DataTemplate menu:TapasPage}"></ShellContent>
-        <ShellContent Title="Principales" ContentTemplate="{DataTemplate menu:PrincipalesPage}"></ShellContent>
-        <ShellContent Title="Postres" ContentTemplate="{DataTemplate menu:PostresPage}"></ShellContent>
-        <ShellContent Title="Bebidas" ContentTemplate="{DataTemplate menu:BebidasPage}"></ShellContent>
+    <FlyoutItem Title="Speisekarte" Route="menu">
+        <ShellContent Title="Ensaladas" Route="ensaladas" ContentTemplate="{DataTemplate menu:EnsaladasPage}"></ShellContent>
+        <ShellContent Title="Sopas" Route="sopas" ContentTemplate="{DataTemplate menu:SopasPage}"></ShellContent>
+        <ShellContent Title="Tapas" Route="tapas" ContentTemplate="{DataTemplate menu:TapasPage}"></ShellContent>
+        <ShellContent Title="Principales" Route="principales" ContentTemplate="{DataTemplate menu:PrincipalesPage}"></ShellContent>
+        <ShellContent Title="Postres" Route="postres" ContentTemplate="{DataTemplate menu:PostresPage}"></ShellContent>
+        <ShellContent Title="Bebidas" Route="bebidas" ContentTemplate="{DataTemplate menu:BebidasPage}"></ShellContent>
     </FlyoutItem>
 
     <ShellContent Title="Kontakt" ContentTemplate="{DataTemplate local:MainPage}"></ShellContent>

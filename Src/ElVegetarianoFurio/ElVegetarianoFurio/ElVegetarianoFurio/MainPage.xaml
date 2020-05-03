@@ -9,7 +9,7 @@
     <StackLayout>
         <Label FontSize="Title" FontAttributes="Bold" Padding="5">Unsere Speisen</Label>
     
-        <CollectionView ItemsSource="{Binding Categories}">
+        <CollectionView ItemsSource="{Binding Categories}" SelectionMode="Single" SelectionChanged="OnCategorySelected" >
             <CollectionView.ItemTemplate>
                 <DataTemplate>
                     <Grid Padding="5">

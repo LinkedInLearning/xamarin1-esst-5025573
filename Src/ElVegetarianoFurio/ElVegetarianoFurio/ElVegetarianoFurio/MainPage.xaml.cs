@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ElVegetarianoFurio.Menu;
 using Xamarin.Forms;
 
 namespace ElVegetarianoFurio
@@ -24,6 +25,40 @@ namespace ElVegetarianoFurio
         {
             base.OnAppearing();
             _viewModel.LoadDataCommand.Execute(null);
+        }
+
+        async void OnCategorySelected(object sender, SelectionChangedEventArgs e)
+        {
+            var id = (e.CurrentSelection.FirstOrDefault() as Category).Id;
+            string route;
+
+            switch (id)
+            {
+                case 1:
+                    route = "///menu/ensaladas";
+                    break;
+                case 2:
+                    route = "///menu/sopas";
+                    break;
+                case 3:
+                    route = "///menu/tapas";
+                    break;
+                case 4:
+                    route = "///menu/principales";
+                    break;
+                case 5:
+                    route = "///menu/postres";
+                    break;
+                case 6:
+                    route = "///menu/bebidas";
+                    break;
+                default:
+                    route = "start";
+                    break;
+            }
+
+            await Shell.Current.GoToAsync(route);
+
         }
     }
 }
