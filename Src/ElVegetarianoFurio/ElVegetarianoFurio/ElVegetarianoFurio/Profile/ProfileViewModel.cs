@@ -3,52 +3,50 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Text;
+using Xamarin.Essentials;
 
 namespace ElVegetarianoFurio.Profile
 {
     public class ProfileViewModel : INotifyPropertyChanged
     {
-        private string _city;
-        private string _zip;
-        private string _street;
-        private string _fullName;
+
 
         public string FullName
         {
-            get => _fullName;
+            get => Preferences.Get(nameof(FullName), "");
             set
             {
-                _fullName = value;
+                Preferences.Set(nameof(FullName), value);
                 OnPropertyChanged();
             }
         }
 
         public string Street
         {
-            get => _street;
+            get => Preferences.Get(nameof(Street), "");
             set
             {
-                _street = value;
+                Preferences.Set(nameof(Street), value);
                 OnPropertyChanged();
             }
         }
 
         public string Zip
         {
-            get => _zip;
+            get => Preferences.Get(nameof(Zip), "");
             set
             {
-                _zip = value;
+                Preferences.Set(nameof(Zip), value);
                 OnPropertyChanged();
             }
         }
 
         public string City
         {
-            get => _city;
+            get => Preferences.Get(nameof(City), "");
             set
             {
-                _city = value;
+                Preferences.Set(nameof(City), value);
                 OnPropertyChanged();
             }
         }
