@@ -24,5 +24,11 @@ namespace ElVegetarianoFurio.Menu
             base.OnAppearing();
             _viewModel.LoadDataCommand.Execute(null);
         }
+
+        async void OnDishSelcted(object sender, SelectionChangedEventArgs e)
+        {
+            var id = (e.CurrentSelection.FirstOrDefault() as Dish).Id;
+            await Shell.Current.GoToAsync($"///menu/dish?id={id}");
+        }
     }
 }

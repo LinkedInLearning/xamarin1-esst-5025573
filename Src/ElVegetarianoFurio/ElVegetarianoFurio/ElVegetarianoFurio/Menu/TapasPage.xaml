@@ -21,7 +21,9 @@
 
             <CollectionView Grid.Row="1" 
                             ItemsSource="{Binding Dishes}" 
-                            ItemTemplate="{StaticResource DishRowTemplate}">
+                            ItemTemplate="{StaticResource DishRowTemplate}"
+                            SelectionMode="Single"
+                            SelectionChanged="OnDishSelcted">
             </CollectionView>
 
         </Grid>
