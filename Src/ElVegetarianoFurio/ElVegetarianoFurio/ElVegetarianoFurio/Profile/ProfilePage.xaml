@@ -9,13 +9,13 @@
     <ContentPage.Content>
         <StackLayout Padding="20">
             <Label Text="Name"></Label>
-            <Entry></Entry>
+            <Entry Text="{Binding FullName}"></Entry>
             <Label Text="Straße"></Label>
-            <Entry></Entry>
+            <Entry Text="{Binding Street}"></Entry>
             <Label Text="Plz"></Label>
-            <Entry></Entry>
+            <Entry Text="{Binding Zip}"></Entry>
             <Label Text="Ort"></Label>
-            <Entry></Entry>
+            <Entry Text="{Binding City}"></Entry>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

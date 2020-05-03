@@ -15,6 +15,7 @@ namespace ElVegetarianoFurio.Profile
         public ProfilePage()
         {
             InitializeComponent();
+            BindingContext = new ProfileViewModel();
         }
     }
 }
