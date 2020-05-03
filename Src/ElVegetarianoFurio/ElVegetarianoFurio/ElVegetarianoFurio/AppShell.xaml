@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="clr-namespace:ElVegetarianoFurio;assembly=ElVegetarianoFurio"
+             mc:Ignorable="d"
+             x:Class="ElVegetarianoFurio.AppShell">
+    <ShellContent Title="Start" ContentTemplate="{DataTemplate local:MainPage}"></ShellContent>
+
+    <FlyoutItem Title="Speisekarte">
+        <ShellContent Title="Ensaladas" ContentTemplate="{DataTemplate local:MainPage}"></ShellContent>
+        <ShellContent Title="Sopas" ContentTemplate="{DataTemplate local:MainPage}"></ShellContent>
+        <ShellContent Title="Tapas" ContentTemplate="{DataTemplate local:MainPage}"></ShellContent>
+        <ShellContent Title="Principales" ContentTemplate="{DataTemplate local:MainPage}"></ShellContent>
+        <ShellContent Title="Postres" ContentTemplate="{DataTemplate local:MainPage}"></ShellContent>
+        <ShellContent Title="Bebidas" ContentTemplate="{DataTemplate local:MainPage}"></ShellContent>
+    </FlyoutItem>
+
+    <ShellContent Title="Kontakt" ContentTemplate="{DataTemplate local:MainPage}"></ShellContent>
+    <ShellContent Title="Profil" ContentTemplate="{DataTemplate local:MainPage}"></ShellContent>
+
+</Shell>
