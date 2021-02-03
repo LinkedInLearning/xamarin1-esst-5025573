@@ -1,7 +1,7 @@
 # Xamarin.Forms Grundkurs
 Xamarin.Forms Grundkurs (Revision Q2 2020)
 
-Dies ist das Repository für den **LinkedIn Learning** Xamarin.Forms Grundkurs. Der Kurs ist bei [LinkedIn Learning](https://linkedin.com/learning) erhältlich.
+Dies ist das Repository für den **LinkedIn Learning** Xamarin.Forms Grundkurs. Der Kurs ist bei [LinkedIn Learning](https://www.linkedin.com/learning/xamarin-forms-grundkurs) erhältlich.
 
 ## Über diesen Kurs
 > _Lernen Sie die Grundlagen der Plattformübergreifenden App-Entwicklung für Android und iOS mit Xamarin.Forms._
