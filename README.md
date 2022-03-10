@@ -3,6 +3,8 @@ Xamarin.Forms Grundkurs (Revision Q2 2020)
 
 Dies ist das Repository für den **LinkedIn Learning** Xamarin.Forms Grundkurs. Der Kurs ist bei [LinkedIn Learning](https://www.linkedin.com/learning/xamarin-forms-grundkurs) erhältlich.
 
+![tn-url]
+
 ## Über diesen Kurs
 > _Lernen Sie die Grundlagen der Plattformübergreifenden App-Entwicklung für Android und iOS mit Xamarin.Forms._
 
@@ -34,5 +36,7 @@ Um diese Übungsdateien verwenden zu können müssen Sie  [Visual Studio install
 
 ## Über den Autor - André Krämer
 Sie finden [weitere Kurse von André Krämer](https://www.linkedin.com/learning/instructors/andre-kramer) auf LinkedIn Learning.  Folgen Sie ihm auf [LinkedIn](https://www.linkedin.com/in/andrekraemer?trk=lil_instructor) und [Twitter](https://twitter.com/codemurai). 
+
+[tn-url]: https://media-exp1.licdn.com/dms/image/C4D0DAQGBS4RSfBkTDg/learning-public-crop_675_1200/0/1600341327089?e=1646964000&v=beta&t=E9CLuzSWqQVombiFFQHFwL-L9YdDOrJHUVUvAX4du_I
 
 
