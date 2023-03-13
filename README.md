@@ -37,6 +37,6 @@ Um diese Übungsdateien verwenden zu können müssen Sie  [Visual Studio install
 ## Über den Autor - André Krämer
 Sie finden [weitere Kurse von André Krämer](https://www.linkedin.com/learning/instructors/andre-kramer) auf LinkedIn Learning.  Folgen Sie ihm auf [LinkedIn](https://www.linkedin.com/in/andrekraemer?trk=lil_instructor) und [Twitter](https://twitter.com/codemurai). 
 
-[tn-url]: https://media-exp1.licdn.com/dms/image/C4D0DAQGBS4RSfBkTDg/learning-public-crop_675_1200/0/1600341327089?e=1646964000&v=beta&t=E9CLuzSWqQVombiFFQHFwL-L9YdDOrJHUVUvAX4du_I
+[tn-url]: https://cdn.lynda.com/course/5025573/5025573-1600341321231-16x9.jpg
 
 
